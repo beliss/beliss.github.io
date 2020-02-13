@@ -43,9 +43,9 @@
     }
 	
     const CONFIG_LEACLOUD_COUNT = {
-      enable: false,
-	  appId: 'AU8...',
-	  appKey: '4cU...',
+      enable: flase,
+	  appId: 'dX--',
+	  appKey: 'dX--',
 	  serverURLs: 'http' || ' '
     }
   </script>
@@ -105,6 +105,10 @@
 	</p>
 
 	
+	
+		<span id="star-button" rel="unlike">
+			<i class="icon-heart"></i>
+		</span>
 	
 
 	<!-- Nav trigger for navigation-H-->
@@ -278,7 +282,25 @@
 			
 			
 
+	
+    <span class="leancloud_visitors" id="/2020/02/13/%E6%B0%93/_visitors" data-url="/2020/02/13/%E6%B0%93/" data-title="氓">
+       	<i class="icon-eye"></i>
+       	热度
+        
+            <i class="leancloud_visitors_count" id="leancloud_visitors_count">1</i>
+                   
+    </span>
+    
 
+
+
+	
+    <span class="leancloud_likes" id="/2020/02/13/%E6%B0%93/_likes" data-url="/2020/02/13/%E6%B0%93/" data-title="氓" rel="unlike">
+        <i class="icon-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
+	
 
 		</div>
 
@@ -587,6 +609,17 @@
 	<!-- busuanzi -->
 	<!-- busuanzi -->
 
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_page_pv">
+	  		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+		</span>
+
+	
+
+
 
 
 			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
@@ -619,6 +652,10 @@
 
 
 <!-- love effect -->
+
+	
+<script src="/plugin/love/love.js"></script>
+
 
 
 <!-- back to top -->
@@ -663,6 +700,11 @@
 -->
 
 
+  
+<script src="/plugin/leancloud/av-min.js"></script>
+<script src="/js/leancloud-count.js"></script>
+
+
 	
 
   
@@ -690,6 +732,21 @@
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var limitCount = 10;
+        if( $('#topN').length ){
+            setTimeout(function() {
+                topNPost(limitCount);
+			}, 3000);
+        }
+    </script>
+   
 								
 			</div>
 		</div>
