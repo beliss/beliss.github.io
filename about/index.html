@@ -348,10 +348,6 @@
 
 <!-- love effect -->
 
-	
-<script src="/plugin/love/love.js"></script>
-
-
 
 <!-- back to top -->
 
@@ -413,6 +409,21 @@
 <script src="/plugin/resizediv/resizediv.js"></script>
 <script src="/js/main.js"></script>
 
+		
+		<link rel="stylesheet" href="/dist/APlayer.min.css">
+		<div id="aplayer"></div>
+		<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+		<script type="text/javascript" src="/dist/music.js"></script>
+		
+		
 	</body>	
 </html>
+
+{% if theme.fireworks %}
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/fireworks.js"></script>
+{% endif %}
+
 <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js"></script>
+
